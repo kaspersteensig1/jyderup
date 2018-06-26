@@ -98,18 +98,6 @@
 </span>
                                     </div>
                                 </li>
-                                <li>
-                                    <div>
-                                        <a href="#">
-                                            <img src="http://icons.iconarchive.com/icons/dapino/summer-holiday/256/photo-icon.png" alt="">
-                                        </a>
-                                        <span>
-                                        <p><strong>something</strong></p>
-                                        <p><strong>9.000</strong></p>
-                                        <p>Antal: 1</p>
-</span>
-                                    </div>
-                                </li>
                             </ul>
                             <header>
                                 <p>Total: 27.000</p>
@@ -169,15 +157,15 @@
 <p><strong>Tilvalg</strong></p>
 <p>Få gaven pakket ind for 15,00kr<br>set kryds ud for varen</p>
 <p><strong>Kommentar til ordren</strong></p>
-<input type="textarea" class="form-control" placeholder="Hvis du har kommentarer eller ønsker i forbindelse med din ordre, så skriv dem her">
+<textarea rows="2" class="form-control" placeholder="Hvis du har kommentarer eller ønsker i forbindelse med din ordre, så skriv dem her"></textarea>
 <p><strong>GAVEKORT</strong></p>
 <p>Ønsker du at betale med gavekort, så indtast koden nedenfor.</p>
 <input type="text" class="form-control" placeholder="Indtast kode">
-<input type="text" class="form-control" palceholder="Indtast beløb">
+<input type="text" class="form-control" placeholder="Indtast beløb">
 <button type="button" class="btn theme-color">TILFØJ GAVEKORT TIL BETALLING</button>
 <p><strong>RABATKODE</strong></p>
 <p>Har du en rabatkode, kan du indtaste den her</p>
-<input type="text" class="form-control" palceholder="Indtast kode">
+<input type="text" class="form-control" placeholder="Indtast kode">
 <button type="button" class="btn theme-color">INDLØS RABATKODE</button>
 </span>
                         <span class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
@@ -191,19 +179,21 @@
    <a href="#">
                                             <img src="http://icons.iconarchive.com/icons/dapino/summer-holiday/256/photo-icon.png" alt="">
                                         </a>
-    <tbody>
+    <tbody id="selcetion">
         <tr>
-            <td></td>
-            <td><strong>something</strong></td>
-        </tr>
-        <tr>
-            <td></td>
+           <td><strong>Something</strong></td>
+            <td>
+                <input type="number" placeholder="1">
+            </td>
             <td><strong>9.000,00</strong></td>
+            
         </tr>
         <tr>
             <td></td>
-            <td>Antal: 1</td>
+            <td><input type="checkbox"> Indpakning</td>
+            <td>+15kr</td>
         </tr>
+        
     </tbody>
 </table>
 
@@ -211,49 +201,27 @@
                     </div>
                     
                     <div class="productInCart">
-                                                        <a href="#">
-                                            <img src="http://icons.iconarchive.com/icons/dapino/summer-holiday/256/photo-icon.png" alt="">
-                                        </a>
+                                                        
                                         
 <table>
-    <tbody>
-        <tr>
-            <td></td>
-            <td><strong>something</strong></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td><strong>9.000,00</strong></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Antal: 1</td>
-        </tr>
-    </tbody>
-</table>
-
-                        <hr>
-                    </div>
-                    
-                    <div class="productInCart">
-                                                        <a href="#">
+   <a href="#">
                                             <img src="http://icons.iconarchive.com/icons/dapino/summer-holiday/256/photo-icon.png" alt="">
                                         </a>
-                                        
-<table>
-    <tbody>
+    <tbody id="selcetion">
         <tr>
-            <td></td>
-            <td><strong>something</strong></td>
-        </tr>
-        <tr>
-            <td></td>
+           <td><strong>Something</strong></td>
+            <td>
+                <input type="number" placeholder="1">
+            </td>
             <td><strong>9.000,00</strong></td>
+            
         </tr>
         <tr>
             <td></td>
-            <td>Antal: 1</td>
+            <td><input type="checkbox"> Indpakning</td>
+            <td>+15kr</td>
         </tr>
+        
     </tbody>
 </table>
 
@@ -321,7 +289,7 @@
             <ul class="navbar-nav">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="forside.html">Smykker</a>
+                    <a class="nav-link" href="#">Smykker</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Ure</a>
