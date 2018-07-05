@@ -37,6 +37,7 @@ textarea {
 /*** Top menu ***/
 
 .topbar {
+    color: white;
     font-size: 18px;
     & span {
         font-family: Sanchez;
@@ -47,6 +48,7 @@ textarea {
 .other-menu.container-fluid>div>ul>li>a {
     font-family: montserrat;
     font-size: 11px;
+    color: black;
 }
 
 
@@ -83,6 +85,11 @@ textarea {
     font-size: 18px;
     text-align: center;
 }
+
+/*** shopping bag ***/
+.shopping-bag ul li div p {color: #cccccc;}
+.shopping-bag ul li div p strong {color: #000;}
+
 
 
 /*** User login ***/
