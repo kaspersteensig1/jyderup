@@ -16,6 +16,19 @@
     }
 }
 
+.produkt-side>section>article>div {
+    margin-top: 80px;
+    & h1 {
+        font-size: 22px;
+    }
+    & p {
+        color: #666666;
+    }
+    & .altPayment {
+        color: #905977;
+    }
+}
+
 @media screen and (min-width:768px) {
     body>main>section:nth-child(2)>aside>button {
         display: none;
@@ -24,4 +37,3 @@
         display: block!important;
     }
 }
-

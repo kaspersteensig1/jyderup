@@ -96,10 +96,12 @@
         }
     }
 }
-body > header > section.other-menu.container-fluid > div > ul > li:nth-child(4) > div > a:nth-child(2) {
+
+body>header>section.other-menu.container-fluid>div>ul>li:nth-child(4)>div>a:nth-child(2) {
     float: left;
 }
-body > header > section.other-menu.container-fluid > div > ul > li:nth-child(4) > div > form {
+
+body>header>section.other-menu.container-fluid>div>ul>li:nth-child(4)>div>form {
     margin-bottom: 5px;
 }
 
@@ -118,9 +120,10 @@ body > header > section.other-menu.container-fluid > div > ul > li:nth-child(4) 
     }
 }
 
+
 /*** Produckt in cart ***/
+
 .productInCart {
-    
     & table {
         display: inline-block;
     }
@@ -133,19 +136,31 @@ body > header > section.other-menu.container-fluid > div > ul > li:nth-child(4) 
         display: inherit;
     }
 }
-input, textarea {
+
+input,
+textarea {
     border-radius: 0px;
 }
-#myModal > div > div > div.modal-body.row > span:nth-child(1) > input, #myModal > div > div > div.modal-body.row > span:nth-child(2) > input {
+
+#myModal>div>div>div.modal-body.row>span:nth-child(1)>input,
+#myModal>div>div>div.modal-body.row>span:nth-child(2)>input {
     margin-bottom: 5px;
 }
-#myModal > div > div > div.modal-body.row > span:nth-child(2) > p:nth-child(10), #myModal > div > div > div.modal-body.row > span:nth-child(2) > p:nth-child(5) {
+
+#myModal>div>div>div.modal-body.row>span:nth-child(2)>p:nth-child(10),
+#myModal>div>div>div.modal-body.row>span:nth-child(2)>p:nth-child(5) {
     margin-top: 10px;
 }
-#selcetion > tr > td { 
-    & input {width: 35px;}
-    & button {width: 20px;}
-    } 
+
+#selcetion>tr>td {
+    & input {
+        width: 35px;
+    }
+    & button {
+        width: 20px;
+    }
+}
+
 
 /***************** Navigation **********************/
 
@@ -154,6 +169,12 @@ nav {
         margin-bottom: 32px;
         & ul {
             margin: 0 auto;
+            & li.active {
+                border-bottom: medium solid transparent;
+                border-image: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 25%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 1) 75%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 100%);
+                
+                border-image-slice: 1;
+            }
         }
         & span {
             position: absolute;
@@ -238,6 +259,7 @@ nav {
 
 
 /*** button style ***/
+
 .btn {
     border-radius: 0rem;
     width: 100%;
@@ -245,20 +267,25 @@ nav {
 
 
 /*** aside ***/
-body > main > section:nth-child(2) > aside > div > div > ul > li:nth-child(2) {
+
+body>main>section:nth-child(2)>aside>div>div>ul>li:nth-child(2) {
     margin-top: 15px;
 }
-body > main > section:nth-child(2) > article > div > span > a > p {
+
+body>main>section:nth-child(2)>article>div>span>a>p {
     margin-bottom: 0;
     text-align: center;
 }
+
 .card {
     border-radius: 0px;
 }
 
+
 /*** media querys ***/
-@media screen and (min-width: 992px){
+
+@media screen and (min-width: 992px) {
     .modal-lg {
-    max-width: 90%;
-}
+        max-width: 90%;
+    }
 }
