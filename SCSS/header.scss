@@ -169,6 +169,9 @@ nav {
         margin-bottom: 32px;
         & ul {
             margin: 0 auto;
+            & li {
+                margin: 0 5px;
+            }
             & li.active {
                 border-bottom: medium solid transparent;
                 border-image: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 25%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 1) 75%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 100%);
@@ -178,7 +181,7 @@ nav {
         }
         & span {
             position: absolute;
-            right: 100px;
+            right: 5px;
         }
     }
 }
