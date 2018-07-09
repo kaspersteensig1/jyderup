@@ -29,11 +29,32 @@
     }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:991px) {
     body>main>section:nth-child(2)>aside>button {
         display: none;
     }
     #filter {
         display: block!important;
+    }
+}
+
+
+/*** sorterings menu ***/
+
+@media screen and (max-width:991px) {
+    #filter {
+        position: absolute;
+        background-color: lightgray;
+        z-index: 1;
+        width: 300px;
+        left: -300px;
+        transition: 1s;
+    }
+    .showContent {
+        left: 0px!important;
+        transition: 1s;
+    }
+    .container {
+        max-width: 100%;
     }
 }

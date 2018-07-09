@@ -19,6 +19,7 @@
 p, body, td {
     font-family: montserrat;
     font-size: 12px;
+    color: #333333;
 }
 strong {
     font-family: montserrat;
@@ -193,4 +194,7 @@ body>footer>section>div>p>strong {
 body>footer>section {
     font-family: montserrat;
     font-size: 12px;
+}
+footer p, label {
+    color: #333333;
 }
