@@ -9,17 +9,19 @@ $(document).ready(function () {
 
 
     $('#filterButton').click(function () {
+        window.scrollTo(0,0);
         $('#filter').toggleClass('showContent');
+        
     });
 
     //move aside menu..
 
-
-    $(window).resize(function () {
+$(window).on('load resize', function () {
+    
         if ($(window).width() <= 991) {
             $('#filter').prependTo('body');
         }
-        else {
+        if ($(window).width() > 991) {
             $('#filter').appendTo('aside');
         }
     });
