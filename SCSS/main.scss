@@ -28,7 +28,9 @@
         color: #905977;
     }
 }
-
+span.col-xs-6 {
+    width: 50%;
+}
 @media screen and (min-width:991px) {
     body>main>section:nth-child(2)>aside>button {
         display: none;
