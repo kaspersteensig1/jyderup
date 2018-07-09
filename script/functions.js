@@ -10,7 +10,8 @@ $( document ).ready(function() {
     
     $('#filterButton').click(function() {
         $('#filter').toggleClass('showContent');
-    })
+    });
+    
 });
 
 
