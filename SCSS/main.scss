@@ -48,11 +48,11 @@
         z-index: 1;
         width: 300px;
         left: -300px;
-        transition: 1s;
+        transition: 0.5s;
     }
     .showContent {
         left: 0px!important;
-        transition: 1s;
+        transition: 0.5s;
     }
     .container {
         max-width: 100%;
