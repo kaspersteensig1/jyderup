@@ -24,6 +24,21 @@ $(window).on('load resize', function () {
         if ($(window).width() > 991) {
             $('#filter').appendTo('aside');
         }
+    
+    
+    
+    
+    
+    
+    if ($(window).width() <= 767) {
+            $('#collapsibleNavbar').prependTo('body');
+        }
+    
+    if ($(window).width() > 767) {
+            $('#collapsibleNavbar').appendTo('body > nav');
+        }
+    
+    
     });
 
 });

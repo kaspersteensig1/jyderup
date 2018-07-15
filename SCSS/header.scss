@@ -183,6 +183,8 @@ nav {
 }
 
 
+
+
 /*** User login ***/
 
 .bruger-login {
@@ -286,5 +288,18 @@ body>main>section:nth-child(2)>article>div>span>a>p {
 @media screen and (min-width: 992px) {
     .modal-lg {
         max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #collapsibleNavbar {
+        min-width: 70%!important;
+        position: absolute;
+        padding-top: 50px;
+        padding-left: 3%;
+        background-color: #fff;
+        z-index: 1;
+        height: 100vh;
+        transition: 1s;
     }
 }
