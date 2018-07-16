@@ -42,10 +42,12 @@ $(window).on('load resize', function () {
     
     if ($(window).width() <= 767) {
             $('#collapsibleNavbar').prependTo('body');
+        $('body > nav').insertAfter('body > header > section.topbar');
         }
     
     if ($(window).width() > 767) {
             $('#collapsibleNavbar').appendTo('body > nav');
+        $('body > header > nav').insertAfter('body > header');
         }
     
     
