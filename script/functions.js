@@ -7,12 +7,22 @@ $(document).ready(function () {
     });
 
 
-
     $('#filterButton').click(function () {
         window.scrollTo(0,0);
         $('#filter').toggleClass('showContent');
         
     });
+    $('body > nav > button').click(function () {
+        window.scrollTo(0,0);
+        $('#collapsibleNavbar').toggleClass('showContent');
+        
+    });
+    $('#closer').click(function() {
+        $('#collapsibleNavbar').removeClass('showContent collapse show');
+    })
+    $('#closer-kategori').click(function() {
+        $('#filter').removeClass('showContent');
+    })
 
     //move aside menu..
 

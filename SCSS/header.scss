@@ -284,8 +284,13 @@ body>main>section:nth-child(2)>article>div>span>a>p {
 
 
 /*** media querys ***/
-
+@media screen and (min-width: 768px) {
+    #collapsibleNavbar > ul > li:nth-child(1) {display: none;}
+}
 @media screen and (min-width: 992px) {
+    #closer-kategori {
+        display: none;
+    }
     .modal-lg {
         max-width: 90%;
     }
@@ -293,13 +298,33 @@ body>main>section:nth-child(2)>article>div>span>a>p {
 
 @media screen and (max-width: 767px) {
     #collapsibleNavbar {
-        min-width: 70%!important;
+        min-width: 60%!important;
         position: absolute;
         padding-top: 50px;
         padding-left: 3%;
         background-color: #fff;
         z-index: 1;
         height: 100vh;
-        transition: 1s;
+        transition: 0.8s;
+        left: -70%;
     }
+    .show {
+        left: 0!important;
+    }
+    
+  
+}
+
+
+
+#closer {
+    padding: 8px;
+    float: right;
+    margin-right: 35px;
+    margin-top: 0;
+}
+#closer-kategori {
+    text-align: right!important;
+    float: right;
+    font-size: 2rem;
 }
