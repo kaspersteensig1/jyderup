@@ -295,10 +295,18 @@ body>main>section:nth-child(2)>article>div>span>a>p {
         max-width: 90%;
     }
 }
+@media screen and (max-width: 991px) {
+    #categoriMenu {
+            background-color: white;
+    border-right: 1px solid darkgray;
+    }
+}
+
 
 @media screen and (max-width: 767px) {
     #collapsibleNavbar {
-        min-width: 60%!important;
+        border-right: 1px solid darkgray;
+        min-width: 70%!important;
         position: absolute;
         padding-top: 50px;
         padding-left: 3%;
