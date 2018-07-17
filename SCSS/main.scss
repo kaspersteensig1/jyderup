@@ -77,22 +77,21 @@ body > main > section:nth-child(2) > article > div.row.itemslist > span {
 #clear-all {
     float: right;
 }
+@supports(padding: max(0px)) {
 header > section.topbar > div > div {
     padding-left: env(safe-area-inset-left);
     padding-right: env(safe-area-inset-right);
 }
-main {
-    padding: 12px;
+main > section {
     padding-left: env(safe-area-inset-left);
     padding-right: env(safe-area-inset-right);
 }
 nav {
-    padding: 12px;
     padding-left: env(safe-area-inset-left);
     padding-right: env(safe-area-inset-right);
 }
 footer {
-    padding: 12px;
     padding-left: env(safe-area-inset-left);
     padding-right: env(safe-area-inset-right);
+}
 }
