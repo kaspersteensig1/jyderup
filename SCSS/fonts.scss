@@ -169,7 +169,14 @@ body>header>section.other-menu.container-fluid>div>ul>li:nth-child(4)>div {
         color: gray;
     }
 }
-
+#produkt-navigation {
+    float: right;
+    margin-top: -1px;
+    & a i {
+        font-size: 1.43rem!important;
+        color: gray!important;
+    }
+}
 
 /*** overskrift ***/
 
