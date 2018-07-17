@@ -64,4 +64,16 @@ span.col-xs-6 {
     .container {
         max-width: 100%;
     }
+    #clear-all {
+        margin-top: 50px;
+    }
+}
+body > main > section:nth-child(2) > article > div.row.itemslist > span {
+    margin-bottom: 50px;
+}
+#endspace {
+    margin-top: 50px;
+}
+#clear-all {
+    float: right;
 }

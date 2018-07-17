@@ -24,10 +24,23 @@ p, body, td {
 p {
     line-height: 1.3rem;
 }
-a:hover {
+a {
+    color: black;
+    &:hover {
     text-decoration: none;
     color: #666666;
 }
+}
+#andre-ting {
+        & div {
+            & h1 {
+                text-align: center;
+                font-size: 32px;
+            color: #999999;
+                font-family: Sanchez;
+        }
+        }
+    }
 strong {
     font-family: montserrat;
     font-size: 14px;
@@ -248,4 +261,41 @@ footer p, label {
 }
 footer a {
     color: black;
+}
+/*** Share produckt ***/
+#share {
+    & a {
+        font-size: 1rem;
+        & img {
+            height: 1.1rem
+        }
+    }
+    & p {
+        display: inline;
+        float: right;
+        font-size: 1rem;
+    }
+}
+
+/*** offers/news circle ***/
+.tilbud-offer {
+        position: absolute;
+    right: 0;
+    margin: 6% 8% 6% 6%;
+    float: right;
+    padding: 15px 2px;
+    border-radius: 50%;
+    background-color: #905977;
+    color: white;
+}
+
+.new-produkt {
+        position: absolute;
+    right: 0;
+    margin: 6% 8% 6% 6%;
+    float: right;
+    padding: 15px 2px;
+    border-radius: 50%;
+    background-color: #999999;
+    color: white;
 }

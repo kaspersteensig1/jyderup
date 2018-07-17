@@ -13,6 +13,8 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
+
+
     <!-- eget -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -53,10 +55,10 @@
                         <a href="#">Infomationer</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fas fa-gift"></i></a>
+                        <a href="#"><img src="gfx/gift.png" height="20px" alt=""></a>
                     </li>
                     <li>
-                        <a href="#"><i class="far fa-user"></i></a>
+                        <a href="#"><img src="gfx/user.png" height="20px" alt=""></a>
                         <div class="brugerlogin">
                             <form action="/action_page.php">
                                 <div class="form-group">
@@ -74,7 +76,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#"><i class="fas fa-shopping-bag"></i> Indkøbskurv</a>
+                        <a href="#"><img src="gfx/shopping-bag.png" height="20px" alt=""> Indkøbskurv</a>
                         <div class="shopping-bag">
                             <ul>
                                 <li>
@@ -341,6 +343,7 @@
                 <div class="card" id="filter">
                     <div class="card-body" id="categoriMenu">
                         <a id="closer-kategori" href="#"><i class="fas fa-times"></i></a>
+                        <a href="#" id="clear-all">Ryd</a>
                         <a href="#brand" class="btn" data-toggle="collapse">Mærke <i class="fas fa-angle-up"></i></a>
                         <div class="collapse" id="brand">
                             <ul>
@@ -744,7 +747,20 @@
                     </div>
                     <span class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
         <a href="#">
+           <span class="tilbud-offer">TILBUD</span>
             <img src="http://icons.iconarchive.com/icons/dapino/summer-holiday/256/photo-icon.png" alt="#" class="w-100">
+            <picture data-brackets-id="16249" class="produkt-brand"><img data-brackets-id="16250" src="https://sw4665.smartweb-static.com/upload_dir/pics/LOGOER-BRANDS/AAGAARD-smykker.png" class="w-100" alt=""></picture>
+            <p>AAGAARD 2064 14KT</p>
+            <p>Før 13.154,00</p>
+            <p>9.858,75</p>
+        </a>
+    </span>
+
+                    <span class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+        <a href="#">
+           <span class="new-produkt">NYHED</span>
+            <img src="http://icons.iconarchive.com/icons/dapino/summer-holiday/256/photo-icon.png" alt="#" class="w-100">
+            <picture data-brackets-id="16249" class="produkt-brand"><img data-brackets-id="16250" src="https://sw4665.smartweb-static.com/upload_dir/pics/LOGOER-BRANDS/AAGAARD-smykker.png" class="w-100" alt=""></picture>
             <p>AAGAARD 2064 14KT</p>
             <p>Før 13.154,00</p>
             <p>9.858,75</p>
@@ -754,6 +770,7 @@
                     <span class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
         <a href="#">
             <img src="http://icons.iconarchive.com/icons/dapino/summer-holiday/256/photo-icon.png" alt="#" class="w-100">
+            <picture data-brackets-id="16249" class="produkt-brand"><img data-brackets-id="16250" src="https://sw4665.smartweb-static.com/upload_dir/pics/LOGOER-BRANDS/AAGAARD-smykker.png" class="w-100" alt=""></picture>
             <p>AAGAARD 2064 14KT</p>
             <p>Før 13.154,00</p>
             <p>9.858,75</p>
@@ -763,6 +780,7 @@
                     <span class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
         <a href="#">
             <img src="http://icons.iconarchive.com/icons/dapino/summer-holiday/256/photo-icon.png" alt="#" class="w-100">
+            <picture data-brackets-id="16249" class="produkt-brand"><img data-brackets-id="16250" src="https://sw4665.smartweb-static.com/upload_dir/pics/LOGOER-BRANDS/AAGAARD-smykker.png" class="w-100" alt=""></picture>
             <p>AAGAARD 2064 14KT</p>
             <p>Før 13.154,00</p>
             <p>9.858,75</p>
@@ -772,6 +790,7 @@
                     <span class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
         <a href="#">
             <img src="http://icons.iconarchive.com/icons/dapino/summer-holiday/256/photo-icon.png" alt="#" class="w-100">
+            <picture data-brackets-id="16249" class="produkt-brand"><img data-brackets-id="16250" src="https://sw4665.smartweb-static.com/upload_dir/pics/LOGOER-BRANDS/AAGAARD-smykker.png" class="w-100" alt=""></picture>
             <p>AAGAARD 2064 14KT</p>
             <p>Før 13.154,00</p>
             <p>9.858,75</p>
@@ -781,15 +800,7 @@
                     <span class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
         <a href="#">
             <img src="http://icons.iconarchive.com/icons/dapino/summer-holiday/256/photo-icon.png" alt="#" class="w-100">
-            <p>AAGAARD 2064 14KT</p>
-            <p>Før 13.154,00</p>
-            <p>9.858,75</p>
-        </a>
-    </span>
-
-                    <span class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-        <a href="#">
-            <img src="http://icons.iconarchive.com/icons/dapino/summer-holiday/256/photo-icon.png" alt="#" class="w-100">
+            <picture data-brackets-id="16249" class="produkt-brand"><img data-brackets-id="16250" src="https://sw4665.smartweb-static.com/upload_dir/pics/LOGOER-BRANDS/AAGAARD-smykker.png" class="w-100" alt=""></picture>
             <p>AAGAARD 2064 14KT</p>
             <p>Før 13.154,00</p>
             <p>9.858,75</p>
@@ -800,7 +811,7 @@
 
             
             
-            <div class="row">
+            <div class="row" id="endspace">
                 <span class="col-lg-6 col-md-6">
                 <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam veniam dolores animi itaque debitis voluptatem voluptate neque, non incidunt mollitia cumque laudantium necessitatibus, tempora quisquam tenetur hic sit distinctio! Deleniti.</span><span>Ad eius obcaecati possimus ipsa exercitationem illum adipisci, inventore veritatis recusandae necessitatibus rem sapiente eum qui iste aperiam! Quo sint sapiente explicabo fugit a harum adipisci minima tenetur dicta atque.</span></p>
             </span

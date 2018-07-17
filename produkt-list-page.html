@@ -13,6 +13,8 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
+
+
     <!-- eget -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -23,6 +25,7 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <!-- script til siden -->
     <script src="script/functions.js"></script>
+
 
 </head>
 
@@ -42,7 +45,7 @@
             <div class="row">
                 <span class="col-md-4"></span>
                 <picture class="col-md-4 logo">
-                    <img class="w-100" src="gfx/logo-jyderup.png" alt="logo">
+                <img class="w-100" src="gfx/logo-jyderup.png" alt="logo">
                 </picture>
                 <ul id="sec-menu" class="col-md-4">
                     <li>
@@ -52,10 +55,10 @@
                         <a href="#">Infomationer</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fas fa-gift"></i></a>
+                        <a href="#"><img src="gfx/gift.png" height="20px" alt=""></a>
                     </li>
                     <li>
-                        <a href="#"><i class="far fa-user"></i></a>
+                        <a href="#"><img src="gfx/user.png" height="20px" alt=""></a>
                         <div class="brugerlogin">
                             <form action="/action_page.php">
                                 <div class="form-group">
@@ -73,7 +76,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#"><i class="fas fa-shopping-bag"></i> Indkøbskurv</a>
+                        <a href="#"><img src="gfx/shopping-bag.png" height="20px" alt=""> Indkøbskurv</a>
                         <div class="shopping-bag">
                             <ul>
                                 <li>
@@ -333,13 +336,13 @@
         <section class="row">
             <aside class="col-lg-3 col-md-12 col-sm-12">
                 <!-- kategorier -->
-
+                
                 <button id="filterButton" href="#filter" class="btn">Filtre</button>
-
+                
                 <div class="card" id="filter">
-                    <div class="card card-body" id="categoriMenu">
-
-                    <a id="closer-kategori" href="#"><i class="fas fa-times"></i></a>
+                    <div class="card-body" id="categoriMenu">
+                        <a id="closer-kategori" href="#"><i class="fas fa-times"></i></a>
+                        <a href="#" id="clear-all">Ryd</a>
                         <a href="#brand" class="btn" data-toggle="collapse">Mærke <i class="fas fa-angle-up"></i></a>
                         <div class="collapse" id="brand">
                             <ul>
