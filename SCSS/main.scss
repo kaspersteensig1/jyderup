@@ -86,11 +86,8 @@ main > section {
     padding-left: env(safe-area-inset-left);
     padding-right: env(safe-area-inset-right);
 }
-nav {
-    padding-left: env(safe-area-inset-left);
-    padding-right: env(safe-area-inset-right);
-}
-footer {
+
+footer > section {
     padding-left: env(safe-area-inset-left);
     padding-right: env(safe-area-inset-right);
 }
