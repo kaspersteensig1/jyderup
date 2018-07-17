@@ -77,7 +77,19 @@ body > main > section:nth-child(2) > article > div.row.itemslist > span {
 #clear-all {
     float: right;
 }
-nav, main, footer, body > header > section.topbar > div > div {
+header > section.topbar > div > div {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+}
+main {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+}
+nav {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+}
+footer {
     padding-left: env(safe-area-inset-left);
     padding-right: env(safe-area-inset-right);
 }
