@@ -6,6 +6,17 @@
     width: 100%;
     padding: 6px 0;
 }
+.top-news {
+    max-width: 800px;
+    margin: 0 auto;
+    & span {
+        &:nth-child(1) {}
+        &:nth-child(2) {
+            text-align: right!important;
+        }
+    }
+    
+}
 
 .other-menu {
     float: right;
@@ -166,7 +177,7 @@ nav {
         & ul {
             margin: 0 auto;
             & li {
-                margin: 0 5px;
+                margin: 0 10px;
             }
             & li.active {
                 border-bottom: medium solid transparent;
@@ -263,6 +274,11 @@ nav {
     border-radius: 0rem;
     width: 100%;
 }
+#myModal > div > div > div.modal-body.row > span:nth-child(3) > div:nth-child(8) > button {
+    border: 1px solid #999999;
+    color: #999999;
+    margin-top: 5px;
+}
 
 
 /*** aside ***/
@@ -310,6 +326,9 @@ body>main>section:nth-child(2)>article>div>span>a>p {
         max-width: 300px;
         width: 60%;
         margin: 0 auto;
+    }
+    .other-menu div .logo img {
+        margin-top: 0;
     }
 
     #collapsibleNavbar {
