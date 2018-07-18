@@ -178,13 +178,20 @@ nav {
             margin: 0 auto;
             & li {
                 margin: 0 10px;
+                & :hover {
+                    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, #fff 0%, #fff 15%, #000 15%, #000 85%, #fff 85%, #fff 100%);
+    border-top: 0px;
+    border-image-slice: 1;
+            }
             }
             & li.active {
-                border-bottom: medium solid transparent;
-                border-image: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 25%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 1) 75%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 100%);
-                border-top: 0px;
-                border-image-slice: 1;
+                    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, #fff 0%, #fff 15%, #000 15%, #000 85%, #fff 85%, #fff 100%);
+    border-top: 0px;
+    border-image-slice: 1;
             }
+            
         }
         & span {
             position: absolute;
@@ -319,6 +326,19 @@ body>main>section:nth-child(2)>article>div>span>a>p {
         background-color: white;
         border-right: 1px solid darkgray;
     }
+    #filterButton {
+        width: 50%;
+    display: inline-block;
+        border: 1px solid #ced4da!important;
+        color: #495057!important;
+        font-size: 0.9rem;
+    }
+    #sortringValg {
+        width: 50%;
+    float: right;
+        margin-bottom: 10px;
+        }
+    
 }
 
 @media screen and (max-width: 767px) {

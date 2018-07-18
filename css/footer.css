@@ -1,1 +1,1 @@
-footer hr{margin-bottom:40px;margin-top:50px}.flex img{max-width:60px}
+footer hr{margin-bottom:40px;margin-top:50px}.flex .size-one{max-width:40px;margin:0 3px}.flex .size-two img{width:100px}.flex .size-two:nth-child(7){margin-left:50px}
