@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Jyderup</title>
     <!-- bootstrap css -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap-reboot.min.css">
@@ -12,6 +12,8 @@
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
 
     <!-- eget -->
     <link rel="stylesheet" href="css/style.css">
@@ -31,10 +33,9 @@
     <header>
         <section class="topbar">
             <div class="container">
-                <div class="row">
-                    <span class="col-lg-4 col-md-6 col-sm-12 col-xs-12">Fri fragt ved køb over 500 kr.</span>
-                    <span class="col-lg-4"></span>
-                    <span class="col-lg-4 col-md-6 col-sm-12 col-xs-12">Store rabater ved køb over 1.000 kr.</span>
+                <div class="row top-news">
+                    <span class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Fri fragt ved køb over 500 kr.</span>
+                    <span class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Store rabater ved køb over 1.000 kr.</span>
                 </div>
             </div>
         </section>
@@ -42,8 +43,10 @@
         <section class="other-menu container-fluid">
             <div class="row">
                 <span class="col-md-4"></span>
-                <img class="col-md-4" src="gfx/logo-jyderup.png" alt="logo">
-                <ul class="col-md-4">
+                <picture class="col-md-4 logo">
+                <img class="w-100" src="gfx/logo-jyderup.png" alt="logo">
+                </picture>
+                <ul id="sec-menu" class="col-md-4">
                     <li>
                         <a href="#">Reprationer</a>
                     </li>
@@ -51,10 +54,10 @@
                         <a href="#">Infomationer</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fas fa-gift"></i></a>
+                        <a href="#"><img src="gfx/gift.png" height="20px" alt=""></a>
                     </li>
                     <li>
-                        <a href="#"><i class="far fa-user"></i></a>
+                        <a href="#"><img src="gfx/user.png" height="20px" alt=""></a>
                         <div class="brugerlogin">
                             <form action="/action_page.php">
                                 <div class="form-group">
@@ -72,7 +75,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#"><i class="fas fa-shopping-bag"></i> Indkøbskurv</a>
+                        <a href="#"><img src="gfx/shopping-bag.png" height="20px" alt=""> Indkøbskurv</a>
                         <div class="shopping-bag">
                             <ul>
                                 <li>
@@ -281,14 +284,17 @@
         <!-- skal indeholde logo, samt login og indkøbskurv..-->
     </header>
 
-    <nav class="navbar navbar-expand-md navbar-light">
+    <nav class="navbar navbar-expand-md navbar-light container">
         <!--<a class="navbar-brand" href="#">Navbar</a>-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 <span class="navbar-toggler-icon"></span>
 </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <div class="navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
 
+               <li>
+                    <a id="closer" href="#"><i class="fas fa-times"></i></a>
+                </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Smykker</a>
                 </li>
@@ -318,21 +324,38 @@
 </span>
         </div>
     </nav>
+    
+    
+    
+    
+    
+<main class="container">
+    <section class="row">
+        <article class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h1 class="col-lg-12">OM VIRKSOMHEDEN</h1>
+          <div class="columns">
+            <p>Jyderup Guld Sølv Ure ApS er Jyderup's ældste eksisterende forretning med en levetid som strækker sig helt tilbage til 1889, med kun 5 forskellige ejere frem til i dag.</p>
+           <p>Efter overtagelsen af de nuværende ejere d. 1. december 2007 har Jyderup Guld Sølv Ure ApS gennemgået et lille løft med ny facade, belysning, montre osv. Samtidig har vi arbejdet på at bevare den gode stemning, der altid har været at finde i butikken. Ligeledes har Jyderup Guld Sølv Ure ApS udvidet sortimentet for bedre at kunne tilfredsstille tidens trend, "så kom ind og se vores spændende udvalg".</p>
+           <p>Jyderup Guld Sølv Ure ApS startede internet handel tilbage i år 2008 og har i dag et af de største vare sortiment på markedet, med mange af de kendte mærker.</p>
+           <p>Med venlig hilsen<br>Jyderup Guld, Sølv & Ure ApS</p>
+           <img src="img/billede_017.jpg" alt="billede af facade" class="w-100">
+           </div>
+            
 
-    <main class="container">
 
 
+ 
 
 
-        <!-- indhold -->
-
-
-
-
-
-
-    </main>
-
+        </article>
+    </section>
+</main>
+   
+   
+   
+   
+   
+   
     <footer class="container">
         <hr>
         <section class="row">
@@ -347,14 +370,14 @@
             </div>
             <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
                 <span class="flex">
-<img src="gfx/kort/viabill.png" alt="">
-<img src="gfx/kort/FBF-logo-navn-vertikal-office-Kopi.png" alt="">
-<img src="gfx/kort/mastercard_PNG23.png" alt="">
-<img src="gfx/kort/DK_Logo_konturstreg.png" alt="">
-<img src="gfx/kort/visa-electron-logo-71BEC57E8F-seeklogo.com.png" alt="">
-<img src="gfx/kort/visa_PNG4.png" alt="">
-<img src="gfx/kort/findOspaaFB.png" alt="">
-<img src="gfx/kort/emaerket.png" alt="">
+<img class="size-one" src="gfx/kort/viabill.png" alt="">
+<img class="size-one" src="gfx/kort/FBF-logo-navn-vertikal-office-Kopi.png" alt="">
+<img class="size-one" src="gfx/kort/mastercard_PNG23.png" alt="">
+<img class="size-one" src="gfx/kort/DK_Logo_konturstreg.png" alt="">
+<img class="size-one" src="gfx/kort/visa-electron-logo-71BEC57E8F-seeklogo.com.png" alt="">
+<img class="size-one" src="gfx/kort/visa_PNG4.png" alt="">
+<a class="size-two" href="#"><img src="gfx/kort/findOspaaFB.png" alt=""></a>
+<a class="size-two" href="#"><img src="gfx/kort/emaerket.png" alt=""></a>
 </span>
 
             </div>

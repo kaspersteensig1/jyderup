@@ -37,6 +37,16 @@ span.col-xs-6 {
 .btn {
     letter-spacing: 2px!important;
 }
+
+/*** om side ***/
+.columns {
+    column-count: 2;
+}
+@media screen and (max-width: 911px) {
+    .columns {
+    column-count: 1;
+}
+}
 @media screen and (min-width:991px) {
     body>main>section:nth-child(2)>aside>button {
         display: none;
@@ -45,7 +55,6 @@ span.col-xs-6 {
         display: block!important;
     }
 }
-
 
 /*** sorterings menu ***/
 
