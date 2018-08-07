@@ -2,10 +2,10 @@
 
 .topbar {
     background-color: #905977;
-    height: 42px;
     width: 100%;
     padding: 6px 0;
 }
+
 .top-news {
     max-width: 800px;
     margin: 0 auto;
@@ -15,7 +15,6 @@
             text-align: right!important;
         }
     }
-    
 }
 
 .other-menu {
@@ -87,12 +86,6 @@
                                     & img {
                                         margin-top: 0px;
                                         height: 90px;
-                                    }
-                                }
-                                & p {
-                                    font-size: 0.8rem;
-                                    & strong {
-                                        font-size: 1rem;
                                     }
                                 }
                             }
@@ -177,21 +170,23 @@ nav {
         & ul {
             margin: 0 auto;
             & li {
+                box-sizing: border-box;
                 margin: 0 10px;
-                & :hover {
+                &:hover {
+                    box-sizing: border-box;
                     border-bottom: 1px solid transparent;
-    border-image: linear-gradient(to right, #fff 0%, #fff 15%, #000 15%, #000 85%, #fff 85%, #fff 100%);
-    border-top: 0px;
-    border-image-slice: 1;
-            }
+                    border-image: linear-gradient(to right, #fff 0%, #fff 15%, #000 15%, #000 85%, #fff 85%, #fff 100%);
+                    border-top: 0px;
+                    border-image-slice: 1;
+                }
             }
             & li.active {
-                    border-bottom: 1px solid transparent;
-    border-image: linear-gradient(to right, #fff 0%, #fff 15%, #000 15%, #000 85%, #fff 85%, #fff 100%);
-    border-top: 0px;
-    border-image-slice: 1;
+                box-sizing: border-box;
+                border-bottom: 1px solid transparent;
+                border-image: linear-gradient(to right, #fff 0%, #fff 15%, #000 15%, #000 85%, #fff 85%, #fff 100%);
+                border-top: 0px;
+                border-image-slice: 1;
             }
-            
         }
         & span {
             position: absolute;
@@ -281,7 +276,8 @@ nav {
     border-radius: 0rem;
     width: 100%;
 }
-#myModal > div > div > div.modal-body.row > span:nth-child(3) > div:nth-child(8) > button {
+
+#myModal>div>div>div.modal-body.row>span:nth-child(3)>div:nth-child(8)>button {
     border: 1px solid #999999;
     color: #999999;
     margin-top: 5px;
@@ -328,17 +324,16 @@ body>main>section:nth-child(2)>article>div>span>a>p {
     }
     #filterButton {
         width: 50%;
-    display: inline-block;
+        display: inline-block;
         border: 1px solid #ced4da!important;
         color: #495057!important;
         font-size: 0.9rem;
     }
     #sortringValg {
         width: 50%;
-    float: right;
+        float: right;
         margin-bottom: 10px;
-        }
-    
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -350,7 +345,6 @@ body>main>section:nth-child(2)>article>div>span>a>p {
     .other-menu div .logo img {
         margin-top: 0;
     }
-
     #collapsibleNavbar {
         border-right: 1px solid darkgray;
         min-width: 70%!important;
@@ -381,8 +375,8 @@ body>main>section:nth-child(2)>article>div>span>a>p {
     font-size: 2rem;
 }
 
-body > main > section:nth-child(1) {
-        display: block;
+body>main>section:nth-child(1) {
+    display: block;
     margin-right: 0px;
     padding-right: 15px;
 }

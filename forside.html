@@ -35,7 +35,7 @@
             <div class="container">
                 <div class="row top-news">
                     <span class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Fri fragt ved køb over 500 kr.</span>
-                    <span class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Store rabater ved køb over 1.000 kr.</span>
+                    <span class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Store rabatter ved køb over 1.000 kr.</span>
                 </div>
             </div>
         </section>
@@ -44,14 +44,14 @@
             <div class="row">
                 <span class="col-md-4"></span>
                 <picture class="col-md-4 logo">
-                <img class="w-100" src="gfx/logo-jyderup.png" alt="logo">
+                    <img class="w-100" src="gfx/logo-jyderup.png" alt="logo">
                 </picture>
                 <ul id="sec-menu" class="col-md-4">
                     <li>
-                        <a href="#">Reprationer</a>
+                        <a href="#">Reparationer</a>
                     </li>
                     <li>
-                        <a href="#">Infomationer</a>
+                        <a href="#">Informationer</a>
                     </li>
                     <li>
                         <a href="#"><img src="gfx/gift.png" height="20px" alt=""></a>
@@ -83,7 +83,7 @@
                                         <a href="#">
                                             <img src="http://icons.iconarchive.com/icons/dapino/summer-holiday/256/photo-icon.png" alt="">
                                         </a>
-                                        <span>
+                                        <span class="producktInBasket">
                                         <p><strong>something</strong></p>
                                         <p><strong>9.000</strong></p>
                                         <p>Antal: 1</p>
@@ -95,7 +95,7 @@
                                         <a href="#">
                                             <img src="http://icons.iconarchive.com/icons/dapino/summer-holiday/256/photo-icon.png" alt="">
                                         </a>
-                                        <span>
+                                        <span class="producktInBasket">
                                         <p><strong>something</strong></p>
                                         <p><strong>9.000</strong></p>
                                         <p>Antal: 1</p>
@@ -291,11 +291,11 @@
 </button>
         <div class="navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
-
-               <li>
+                <!-- tilføj class="active" på <li> for at elementet bliver understreget -->
+                <li>
                     <a id="closer" href="#"><i class="fas fa-times"></i></a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="#">Smykker</a>
                 </li>
                 <li class="nav-item">
@@ -330,19 +330,19 @@
         <section class="row">
             <picture class="col-lg-12"><img src="gfx/2000x700.png" alt="image placeholder" class="w-100"></picture>
             <article class="breadcrum col-lg-12">
-                <a href="#">Hjem</a> / <a href="#">Smykker</a>
+                <a href="#">Hjem</a>
             </article>
         </section>
         <section class="row">
             <aside class="col-lg-3 col-md-12 col-sm-12">
                 <!-- kategorier -->
-                
+
                 <button id="filterButton" href="#filter" class="btn">Filtre</button>
-                
+
                 <div class="card" id="filter">
                     <div class="card-body" id="categoriMenu">
                         <a id="closer-kategori" href="#"><i class="fas fa-times"></i></a>
-                        <a href="#" id="clear-all">Ryd</a>
+                        <button id="clear-all">Ryd</button>
                         <a href="#brand" class="btn" data-toggle="collapse">Mærke <i class="fas fa-angle-up"></i></a>
                         <div class="collapse" id="brand">
                             <ul>
@@ -744,80 +744,91 @@
                         <a>4</a>
                         <a>5</a>
                     </div>
-                    <span class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-        <a href="#">
-           <span class="tilbud-offer">TILBUD</span>
-            <img src="http://icons.iconarchive.com/icons/dapino/summer-holiday/256/photo-icon.png" alt="#" class="w-100">
-            <picture data-brackets-id="16249" class="produkt-brand"><img data-brackets-id="16250" src="https://sw4665.smartweb-static.com/upload_dir/pics/LOGOER-BRANDS/AAGAARD-smykker.png" class="w-100" alt=""></picture>
-            <p>AAGAARD 2064 14KT</p>
-            <p>Før 13.154,00</p>
-            <p>9.858,75</p>
-        </a>
+<span class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+<a href="#">
+<span class="tilbud-offer">TILBUD</span>
+<img src="http://icons.iconarchive.com/icons/dapino/summer-holiday/256/photo-icon.png" alt="#" class="w-100">
+<picture data-brackets-id="16249" class="produkt-brand"><img data-brackets-id="16250" src="https://sw4665.smartweb-static.com/upload_dir/pics/LOGOER-BRANDS/AAGAARD-smykker.png" class="w-100" alt=""></picture>
+    <span class="producktInfo">
+    <p>AAGAARD 2064 14KT</p>
+    <p>Før 13.154,00</p>
+    <p>9.858,75</p>
     </span>
+</a>
+</span>
 
-                    <span class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-        <a href="#">
-           <span class="new-produkt">NYHED</span>
-            <img src="http://icons.iconarchive.com/icons/dapino/summer-holiday/256/photo-icon.png" alt="#" class="w-100">
-            <picture data-brackets-id="16249" class="produkt-brand"><img data-brackets-id="16250" src="https://sw4665.smartweb-static.com/upload_dir/pics/LOGOER-BRANDS/AAGAARD-smykker.png" class="w-100" alt=""></picture>
-            <p>AAGAARD 2064 14KT</p>
-            <p>Før 13.154,00</p>
-            <p>9.858,75</p>
-        </a>
+<span class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+<a href="#">
+<span class="new-produkt">NYHED</span>
+<img src="http://icons.iconarchive.com/icons/dapino/summer-holiday/256/photo-icon.png" alt="#" class="w-100">
+<picture data-brackets-id="16249" class="produkt-brand"><img data-brackets-id="16250" src="https://sw4665.smartweb-static.com/upload_dir/pics/LOGOER-BRANDS/AAGAARD-smykker.png" class="w-100" alt=""></picture>
+    <span class="producktInfo">
+    <p>AAGAARD 2064 14KT</p>
+    <p>Før 13.154,00</p>
+    <p>9.858,75</p>
     </span>
+</a>
+</span>
 
-                    <span class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-        <a href="#">
-            <img src="http://icons.iconarchive.com/icons/dapino/summer-holiday/256/photo-icon.png" alt="#" class="w-100">
-            <picture data-brackets-id="16249" class="produkt-brand"><img data-brackets-id="16250" src="https://sw4665.smartweb-static.com/upload_dir/pics/LOGOER-BRANDS/AAGAARD-smykker.png" class="w-100" alt=""></picture>
-            <p>AAGAARD 2064 14KT</p>
-            <p>Før 13.154,00</p>
-            <p>9.858,75</p>
-        </a>
+<span class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+<a href="#">
+<img src="http://icons.iconarchive.com/icons/dapino/summer-holiday/256/photo-icon.png" alt="#" class="w-100">
+<picture data-brackets-id="16249" class="produkt-brand"><img data-brackets-id="16250" src="https://sw4665.smartweb-static.com/upload_dir/pics/LOGOER-BRANDS/AAGAARD-smykker.png" class="w-100" alt=""></picture>
+    <span class="producktInfo">
+    <p>AAGAARD 2064 14KT</p>
+    <p>Før 13.154,00</p>
+    <p>9.858,75</p>
     </span>
+</a>
+</span>
 
-                    <span class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-        <a href="#">
-            <img src="http://icons.iconarchive.com/icons/dapino/summer-holiday/256/photo-icon.png" alt="#" class="w-100">
-            <picture data-brackets-id="16249" class="produkt-brand"><img data-brackets-id="16250" src="https://sw4665.smartweb-static.com/upload_dir/pics/LOGOER-BRANDS/AAGAARD-smykker.png" class="w-100" alt=""></picture>
-            <p>AAGAARD 2064 14KT</p>
-            <p>Før 13.154,00</p>
-            <p>9.858,75</p>
-        </a>
+<span class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+<a href="#">
+<img src="http://icons.iconarchive.com/icons/dapino/summer-holiday/256/photo-icon.png" alt="#" class="w-100">
+<picture data-brackets-id="16249" class="produkt-brand"><img data-brackets-id="16250" src="https://sw4665.smartweb-static.com/upload_dir/pics/LOGOER-BRANDS/AAGAARD-smykker.png" class="w-100" alt=""></picture>
+    <span class="producktInfo">
+    <p>AAGAARD 2064 14KT</p>
+    <p>Før 13.154,00</p>
+    <p>9.858,75</p>
     </span>
+</a>
+</span>
 
-                    <span class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-        <a href="#">
-            <img src="http://icons.iconarchive.com/icons/dapino/summer-holiday/256/photo-icon.png" alt="#" class="w-100">
-            <picture data-brackets-id="16249" class="produkt-brand"><img data-brackets-id="16250" src="https://sw4665.smartweb-static.com/upload_dir/pics/LOGOER-BRANDS/AAGAARD-smykker.png" class="w-100" alt=""></picture>
-            <p>AAGAARD 2064 14KT</p>
-            <p>Før 13.154,00</p>
-            <p>9.858,75</p>
-        </a>
+<span class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+<a href="#">
+<img src="http://icons.iconarchive.com/icons/dapino/summer-holiday/256/photo-icon.png" alt="#" class="w-100">
+<picture data-brackets-id="16249" class="produkt-brand"><img data-brackets-id="16250" src="https://sw4665.smartweb-static.com/upload_dir/pics/LOGOER-BRANDS/AAGAARD-smykker.png" class="w-100" alt=""></picture>
+    <span class="producktInfo">
+    <p>AAGAARD 2064 14KT</p>
+    <p>Før 13.154,00</p>
+    <p>9.858,75</p>
     </span>
+</a>
+</span>
 
-                    <span class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-        <a href="#">
-            <img src="http://icons.iconarchive.com/icons/dapino/summer-holiday/256/photo-icon.png" alt="#" class="w-100">
-            <picture data-brackets-id="16249" class="produkt-brand"><img data-brackets-id="16250" src="https://sw4665.smartweb-static.com/upload_dir/pics/LOGOER-BRANDS/AAGAARD-smykker.png" class="w-100" alt=""></picture>
-            <p>AAGAARD 2064 14KT</p>
-            <p>Før 13.154,00</p>
-            <p>9.858,75</p>
-        </a>
+<span class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+<a href="#">
+<img src="http://icons.iconarchive.com/icons/dapino/summer-holiday/256/photo-icon.png" alt="#" class="w-100">
+<picture data-brackets-id="16249" class="produkt-brand"><img data-brackets-id="16250" src="https://sw4665.smartweb-static.com/upload_dir/pics/LOGOER-BRANDS/AAGAARD-smykker.png" class="w-100" alt=""></picture>
+    <span class="producktInfo">
+    <p>AAGAARD 2064 14KT</p>
+    <p>Før 13.154,00</p>
+    <p>9.858,75</p>
     </span>
+</a>
+</span>
 
                 </div>
 
-            
-            
-            <div class="row" id="endspace">
-                <span class="col-lg-6 col-md-6">
+
+
+                <div class="row" id="endspace">
+                    <span class="col-lg-6 col-md-6">
                 <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam veniam dolores animi itaque debitis voluptatem voluptate neque, non incidunt mollitia cumque laudantium necessitatibus, tempora quisquam tenetur hic sit distinctio! Deleniti.</span><span>Ad eius obcaecati possimus ipsa exercitationem illum adipisci, inventore veritatis recusandae necessitatibus rem sapiente eum qui iste aperiam! Quo sint sapiente explicabo fugit a harum adipisci minima tenetur dicta atque.</span></p>
-            </span
-               ><span class="col-lg-6 col-md-6">
+                    </span><span class="col-lg-6 col-md-6">
                 <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, vel ab eveniet accusantium quos. A, animi, at inventore deserunt atque enim minima fuga ex incidunt, exercitationem voluptate! Ab, minima, suscipit.</span><span>Dignissimos, laborum natus. In dolore numquam tenetur quidem corrupti necessitatibus soluta nobis, commodi corporis sunt exercitationem autem reprehenderit, nemo tempora ex nihil accusamus amet repellat distinctio rerum. Commodi, laboriosam, eum!</span></p>
-            </span>
-            </div>
+                    </span>
+                </div>
 
             </article>
 
@@ -839,7 +850,7 @@
             </div>
             <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-3">
                 <p><strong>Åbningtider</strong><br>Mandag-Torsdag: 09.30-17.00<br>Fredag: 09.30-17.30<br>Lørdag: 09.30-13.00</p>
-                <p>Mail besvares inden for 24 timer.<br>undtager søndage og helligdage</p>
+                <p>Mail besvares inden for 24 timer.<br>undtagen søndage og helligdage.</p>
             </div>
             <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
                 <span class="flex">

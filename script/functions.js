@@ -11,7 +11,7 @@ $(document).ready(function () {
 
     });
     
-    $('body > nav > button').click(function () {
+    $('.navbar > button').click(function () {
         window.scrollTo(0, 0);
         $('#collapsibleNavbar').toggleClass('showContent');
     });
@@ -23,10 +23,10 @@ $(document).ready(function () {
     $('#closer-kategori').click(function () {
         $('#filter').removeClass('showContent');
     });
-
+    
     $('#clear-all').click(function () {
         $('#categoriMenu > div > ul > li > label > input').prop('checked', false);
-    })
+    });
     
     //move aside menu..
     $(window).on('load resize', function () {
