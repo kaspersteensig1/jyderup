@@ -65,10 +65,9 @@ $(document).ready(function () {
 }
 /* Create an alert to show if the browser is IE or not */
 if (isIE()){
-    alert('It is InternetExplorer');
-}else{
-    alert('It is NOT InternetExplorer');
-}
+    $('body > main > section:nth-child(2) > article').removeClass('col-lg-9');
+    $('body > main > section:nth-child(2) > article').addClass('col-lg-8');
+}else{}
     
     
     
@@ -76,8 +75,7 @@ if (isIE()){
 if ( $.browser.msie ) {
   alert( $.browser.version );
 
-    $('body > main > section:nth-child(2) > article').removeClass('col-lg-9');
-    $('body > main > section:nth-child(2) > article').addClass('col-lg-8');
+    
     }
     
     
