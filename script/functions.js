@@ -56,7 +56,7 @@ $(document).ready(function () {
 
     });
     
-    if ( ms_ie ) {
+
     $('body > main > section:nth-child(2) > article').removeClass('col-lg-9').addClass('col-lg-8');
-}
+
 });
