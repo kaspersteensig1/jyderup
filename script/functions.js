@@ -58,5 +58,6 @@ $(document).ready(function () {
     
 
     $('body > main > section:nth-child(2) > article').removeClass('col-lg-9');
+    $('body > main > section:nth-child(2) > article').addClass('col-lg-8');
 
 });
