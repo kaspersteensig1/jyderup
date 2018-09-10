@@ -56,11 +56,30 @@ $(document).ready(function () {
 
     });
     
+    function isIE() {
+  ua = navigator.userAgent;
+  /* MSIE used to detect old browsers and Trident used to newer ones*/
+  var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
+  
+  return is_ie; 
+}
+/* Create an alert to show if the browser is IE or not */
+if (isIE()){
+    alert('It is InternetExplorer');
+}else{
+    alert('It is NOT InternetExplorer');
+}
+    
+    
+    
+    
 if ( $.browser.msie ) {
   alert( $.browser.version );
 
     $('body > main > section:nth-child(2) > article').removeClass('col-lg-9');
     $('body > main > section:nth-child(2) > article').addClass('col-lg-8');
     }
+    
+    
 
 });
