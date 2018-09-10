@@ -57,6 +57,6 @@ $(document).ready(function () {
     });
     
 
-    $('body > main > section:nth-child(2) > article').removeClass('col-lg-9').addClass('col-lg-8');
+    $('body > main > section:nth-child(2) > article').removeClass('col-lg-9');
 
 });
