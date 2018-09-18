@@ -22,10 +22,19 @@ $(document).ready(function () {
 };
     
     if (isMobile.iOS()) {
-    alert('is a iPhone');   
+    alert('is a iOS device');   
 }
-    if (isMobile.any()) {
-    alert('is not a iPhone'); 
+    if (isMobile.Android()) {
+    alert('is a Android phone'); 
+}  
+    if (isMobile.Android()) {
+    alert('is a Blackberry'); 
+}  
+    if (isMobile.Android()) {
+    alert('is opera mini'); 
+}  
+    if (isMobile.Android()) {
+    alert('is a windows phone'); 
 }  
  
  
