@@ -94,61 +94,10 @@ $(document).ready(function () {
 };
     
     if (isMobile.iOS()) {
-    $(".navbar-toggler-icon").on('click', function () {
-        $(".brugerlogin").hide();
-        $(".shopping-bag").hide();
-    });   
-    $("#filterButton").on('click', function () {
-        $(".brugerlogin").hide();
-        $(".shopping-bag").hide();
-    });   
- 
- 
-    $('body').bind('click', function (e) {
-        if ($(e.target).closest('.navbar-collapse').length === 0) {
-            // click happened outside of .navbar, so hide
-            var menuOpened = $('.navbar-collapse').hasClass('show');
-            if (menuOpened === true) {
-                $("#closer").click();
-            }
-        }       
-        if ($(e.target).closest('#filter').length === 0 && e.target.id != "filterButton") {
-            // click happened outside of .navbar, so hide           
-            var filterOpened = $('#filter').hasClass('showContent');
-            if (filterOpened === true) {
-                $("#filterButton").click();               
-            }
-        }
- 
-    });   
+    alert('is a iPhone');   
 }
     if (isMobile.any()) {
-    $(".navbar-toggler-icon").on('click', function () {
-        $(".brugerlogin").hide();
-        $(".shopping-bag").hide();
-    });    
-    $("#filterButton").on('click', function () {
-        $(".brugerlogin").hide();
-        $(".shopping-bag").hide();
-    });    
-
-
-    $(document).bind('click', function (e) {
-        if ($(e.target).closest('.navbar-collapse').length === 0) {
-            // click happened outside of .navbar, so hide
-            var menuOpened = $('.navbar-collapse').hasClass('show');
-            if (menuOpened === true) {
-                $("#closer").click();
-            }
-        }        
-        if ($(e.target).closest('#filter').length === 0 && e.target.id != "filterButton") {
-            // click happened outside of .navbar, so hide            
-            var filterOpened = $('#filter').hasClass('showContent');
-            if (filterOpened === true) {
-                $("#filterButton").click();                
-            }
-        }
-    });  
+    alert('is not a iPhone'); 
 }
     
     
