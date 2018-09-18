@@ -22,20 +22,62 @@ $(document).ready(function () {
 };
     
     if (isMobile.iOS()) {
-    alert('is a iOS device');   
-}
-    if (isMobile.Android()) {
-    alert('is a Android phone'); 
-}  
-    if (isMobile.Android()) {
-    alert('is a Blackberry'); 
-}  
-    if (isMobile.Android()) {
-    alert('is opera mini'); 
-}  
-    if (isMobile.Android()) {
-    alert('is a windows phone'); 
-}  
+    $(".navbar-toggler-icon").on('click', function () {
+        $(".brugerlogin").hide();
+        $(".shopping-bag").hide();
+    });   
+    $("#filterButton").on('click', function () {
+        $(".brugerlogin").hide();
+        $(".shopping-bag").hide();
+    });   
+ 
+ 
+    $('body').bind('click', function (e) {
+        if ($(e.target).closest('.navbar-collapse').length === 0) {
+            // click happened outside of .navbar, so hide
+            var menuOpened = $('.navbar-collapse').hasClass('show');
+            if (menuOpened === true) {
+                $("#closer").click();
+            }
+        }       
+        if ($(e.target).closest('#filter').length === 0 && e.target.id != "filterButton") {
+            // click happened outside of .navbar, so hide           
+            var filterOpened = $('#filter').hasClass('showContent');
+            if (filterOpened === true) {
+                $("#filterButton").click();               
+            }
+        }
+ 
+    });   
+};
+    else {
+    $(".navbar-toggler-icon").on('click', function () {
+        $(".brugerlogin").hide();
+        $(".shopping-bag").hide();
+    });    
+    $("#filterButton").on('click', function () {
+        $(".brugerlogin").hide();
+        $(".shopping-bag").hide();
+    });    
+
+
+    $(document).bind('click', function (e) {
+        if ($(e.target).closest('.navbar-collapse').length === 0) {
+            // click happened outside of .navbar, so hide
+            var menuOpened = $('.navbar-collapse').hasClass('show');
+            if (menuOpened === true) {
+                $("#closer").click();
+            }
+        }        
+        if ($(e.target).closest('#filter').length === 0 && e.target.id != "filterButton") {
+            // click happened outside of .navbar, so hide            
+            var filterOpened = $('#filter').hasClass('showContent');
+            if (filterOpened === true) {
+                $("#filterButton").click();                
+            }
+        }
+    });  
+    };
  
  
     
@@ -127,6 +169,7 @@ function isIE() {
     var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
     return is_ie;
 }
+
 
 
 
