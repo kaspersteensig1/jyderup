@@ -1,5 +1,5 @@
 /***************** header / lille menu / logo **********************/
-
+html { overflow: scroll; -webkit-overflow-scrolling: touch;}
 .topbar {
     background-color: #905977;
     height: 42px;
@@ -393,7 +393,7 @@ body > main > section:nth-child(1) {
 /*** new things ***/
 @media screen and (max-width:767px) {
 
-    html { overflow: scroll; -webkit-overflow-scrolling: touch;}
+    
     
     
     
