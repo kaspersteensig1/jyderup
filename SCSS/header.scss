@@ -393,10 +393,10 @@ body > main > section:nth-child(1) {
 /*** new things ***/
 @media screen and (max-width:767px) {
     #myModal {overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;}
+  -webkit-overflow-scrolling-y: touch;}
     #myModal>div>div>div.modal-body.row>span>input {
         overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling-y: touch;
     }
 nav > #wrap {
     position: absolute;
