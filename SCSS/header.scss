@@ -392,6 +392,7 @@ body > main > section:nth-child(1) {
 
 /*** new things ***/
 @media screen and (max-width:767px) {
+    #myModal {overflow-y:scroll!important;}
 nav > #wrap {
     position: absolute;
     left: 80px;
